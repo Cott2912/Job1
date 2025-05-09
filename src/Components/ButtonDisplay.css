@@ -1,0 +1,23 @@
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+    margin-left: 1000px;
+}
+
+.custombt {
+    background-color: #b81608;
+    color: white;
+    padding: 10px 20px;
+    border: 3px solid orange;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.1s ease-in-out;
+}
+
+.custombt:hover {
+    transform: scale(1.05);
+}

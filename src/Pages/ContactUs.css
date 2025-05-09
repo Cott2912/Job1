@@ -1,0 +1,39 @@
+.contact-container {
+    background-color: #1e1e1e;
+    color: rgb(241, 237, 237);
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.contact-breadcrumb {
+    color: #aaa;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+p {
+    font-size: 16px;
+    max-width: 600px;
+    margin: auto;
+}
+
+a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

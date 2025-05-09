@@ -1,0 +1,52 @@
+.news-section {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    
+}
+
+.game-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.game-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 15px;
+}
+
+.game-card {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.game-card:hover {
+    background-color: red;
+    transform: scale(1.15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.prev-btn,
+.next-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.prev-btn:disabled,
+.next-btn:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
