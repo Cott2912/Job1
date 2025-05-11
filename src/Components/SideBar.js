@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./Sidebar.css";
+import "../Style/Sidebar.css";
 import { IoChevronBackCircle } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 import { FaGamepad } from "react-icons/fa";
@@ -36,8 +36,6 @@ const categories = [
   { name: "Crazy Games", icon: <TbMoodCrazyHappy />, path: "/category/crazy" },
   { name: "Squid Games", icon: <GiGiantSquid />, path: "/category/squid" },
 ];
-
-
 const Sidebar = ({ isOpen, closeSidebar }) => {
   const navigate = useNavigate(); 
   useEffect(() => {
@@ -56,7 +54,6 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
       closeSidebar();
     }
   };
-
   return (
     <>
       {isOpen && <div className="sidebar-overlay" onClick={closeSidebar}></div>}
@@ -65,14 +62,12 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
         <button className="back-btn" onClick={closeSidebar}>
           <IoChevronBackCircle size={30} />
         </button>
-        <h2>Danh mục game</h2>
         <ul>
           {categories.map((category, index) => (
             <li
               key={index}
               onClick={() => handleNavigate(category.path)} 
-              style={{ cursor: "pointer" }} 
-            >
+              style={{ cursor: "pointer" }} >
               <span>{category.icon}</span> {category.name}
             </li>
           ))}
@@ -81,5 +76,4 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
     </>
   );
 };
-
 export default Sidebar;

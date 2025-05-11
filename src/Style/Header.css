@@ -18,11 +18,9 @@
     margin-right: 20px;
     transition: 0.3s ease-in-out;
 }
-
 .menu-icon:hover {
     transform: scale(1.1);
 }
-
 .logo {
     font-size: 28px;
     font-weight: bold;
@@ -30,35 +28,29 @@
     letter-spacing: 1px;
     transition: 0.3s ease-in-out;
 }
-
 .logo:hover {
     color: #ff4500;
 }
-
 .nav-links {
     display: flex;
     align-items: center;
     gap: 30px;
     cursor: pointer;
 }
-
 .nav-links span {
     font-size: 16px;
     font-weight: bold;
     color: white;
     transition: color 0.3s ease-in-out;
 }
-
 .nav-links span:hover {
     color: #ff4500;
 }
-
 .search-bar {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-
 .search-bar input {
     padding: 8px;
     border-radius: 6px;
@@ -67,38 +59,75 @@
     background: rgba(255, 255, 255, 0.2);
     color: white;
 }
-
 .search-bar input::placeholder {
     color: rgba(255, 255, 255, 0.7);
 }
-
 .search-bar svg {
     font-size: 20px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
-
 .search-bar svg:hover {
     color: #ff4500;
 }
-
 .icons {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-
 .icons svg {
     font-size: 24px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
-
 .icons svg:hover {
     color: #ff4500;
     transform: scale(1.2);
 }
-
 .main-content {
     margin-top: 90px;
+}
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .search-bar {
+        width: 100%;
+        justify-content: center;
+    }
+    .icons {
+        justify-content: center;
+    }
+}
+@media (max-width: 768px) {
+    .header {
+        padding: 12px;
+    }
+    .nav-links {
+        gap: 20px;
+    }
+    .search-bar {
+        width: 90%;
+    }
+}
+@media (max-width: 1366px) {
+    .header {
+        max-width: 85%;
+    }
+}
+@media (max-width: 1920px) {
+    .header {
+        max-width: 90%;
+    }
+}
+@media (max-width: 2560px) {
+    .header {
+        max-width: 95%;
+    }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import './ButtonDisplay.css';
+import '../Style/ButtonDisplay.css';
 
 const Button = () => {
   return (
@@ -8,5 +8,4 @@ const Button = () => {
     </div>
   );
 };
-
 export default Button;

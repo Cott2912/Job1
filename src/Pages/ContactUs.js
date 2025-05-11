@@ -1,25 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom"; 
-import "./ContactUs.css";
-
+import { Link } from "react-router-dom";
+import AddHome from "../Components/AddHome";
 const ContactUs = () => {
   return (
-    <div className="contact-container">
-      <div className="contact-breadcrumb">
-        <Link to="/">Home</Link> / <span>Contact Us</span>
-      </div>
-      
-      <h1>Contact Us</h1>
-      <h2>Need assistance? We're available to help!</h2>
-      
+    <AddHome title="Contact Us">
       <p>
-        In case you have any inquiries, comments, or proposals on how we can 
-        improve our platform, don't hesitate to contact us. You can drop us a 
-        line at <a href="mailto:hello@1games.io">hello@1games.io</a>, and we'll 
-        make every effort to reply promptly.
+        Need assistance? We're available to help!
+        In case you have any inquiries, comments,
+        or proposals on how we can improve our platform, 
+        don't hesitate to contact us. You can drop us a line at hello@1games.io,
+        and we'll make every effort to reply promptly.
       </p>
-    </div>
+    </AddHome>
   );
-};
-
+}
 export default ContactUs;

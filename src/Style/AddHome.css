@@ -1,0 +1,115 @@
+.static-page-container {
+    padding: 40px;
+    color: white;
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.breadcrumb,
+.page-title {
+    display: flex;
+    margin-top: 50px;
+    margin-right: 720px;
+    text-align: left;
+    margin-left: 0;
+    width: 100%;
+}
+.breadcrumb-home {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+.breadcrumb-home:hover {
+    text-decoration: underline;
+    color: orange;
+}
+.breadcrumb-title {
+    text-shadow: 2px 2px 6px rgba(78, 72, 75, 0.6);
+    font-size: 18px;
+    max-width: 300px;
+}
+.page-title {
+    font-size: 28px;
+    font-weight: bold;
+    white-space: nowrap;
+    margin-top: 10px;
+}
+.light-mode {
+    color: rgb(70, 68, 68);
+    transition: color 0.3s ease-in-out;
+}
+.dark-mode {
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+.content-box {
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+.breadcrumb-separator {
+    margin: 0 6px;
+    transition: color 0.3s ease-in-out;
+}
+.light-mode .breadcrumb-separator {
+    color: rgb(70, 68, 68);
+}
+.dark-mode .breadcrumb-separator {
+    color: white;
+}
+@media (max-width: 480px) {
+    .static-page-container {
+        width: 95%;
+        padding: 20px;
+    }
+    .breadcrumb {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .breadcrumb-home {
+        font-size: 16px;
+    }
+    .page-title {
+        font-size: 24px;
+        text-align: center;
+    }
+    .content-box {
+        padding: 15px;
+    }
+}
+@media (max-width: 768px) {
+    .static-page-container {
+        width: 90%;
+        padding: 30px;
+    }
+    .breadcrumb {
+        margin-right: 0;
+        justify-content: center;
+    }
+    .breadcrumb-title {
+        max-width: 100%;
+    }
+    .page-title {
+        font-size: 26px;
+    }
+}
+@media (max-width: 1366px) {
+    .static-page-container {
+        max-width: 85%;
+    }
+}
+@media (max-width: 1920px) {
+    .static-page-container {
+        max-width: 90%;
+    }
+}
+@media (max-width: 2560px) {
+    .static-page-container {
+        max-width: 95%;
+    }
+}

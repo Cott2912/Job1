@@ -1,0 +1,127 @@
+.about-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(233, 228, 228, 0.3);
+    max-width: 90%;
+    margin: auto;
+    transition: 0.3s ease-in-out;
+}
+.about-text {
+    flex: 0 0 40%;
+    text-align: left;
+    color: white;
+    font-size: 16px;
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: rgba(14, 14, 14, 0.851);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+}
+.category-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.category-scroll-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 5px;
+}
+.category-list {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    flex-grow: 1;
+    transition: transform 0.3s ease-in-out;
+}
+.category-item {
+    display: flex;
+    align-items: center;
+    background: rgba(6, 2, 10, 0.8);
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid white;
+    color: white;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.category-item:hover {
+    background-color: #ff4500;
+    color: black;
+    transform: scale(1.05);
+}
+.prev-btn,
+.next-btn {
+    background: #ff4500;
+    color: white;
+    border: none;
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    opacity: 1;
+    visibility: visible;
+    margin: 0px 5px;
+}
+.prev-btn:disabled,
+.next-btn:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+@media (max-width: 480px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-text {
+        flex: 1;
+        font-size: 14px;
+        text-align: center;
+    }
+    .category-container {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        padding: 15px;
+    }
+    .about-text {
+        font-size: 15px;
+    }
+    .category-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media (max-width: 1366px) {
+    .about-container {
+        max-width: 85%;
+    }
+}
+@media (max-width: 1920px) {
+    .about-container {
+        max-width: 90%;
+    }
+}
+@media (max-width: 1600px) {
+    .about-container {
+        max-width: 88%;
+    }
+}
+@media (max-width: 2560px) {
+    .about-container {
+        max-width: 95%;
+    }
+}
