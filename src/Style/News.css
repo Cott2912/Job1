@@ -4,6 +4,7 @@
     width: 100%;
     max-width: 3100px;
 }
+
 .game-container {
     display: flex;
     flex-direction: column;
@@ -12,52 +13,61 @@
     padding-bottom: 20px;
     width: 100%;
 }
+
 .controls {
     display: flex;
     justify-content: flex-end;
-    gap: 2px;
     width: 100%;
     max-width: 1700px;
-    margin-bottom: 5px;
-    height: 50px;
-    margin-right: 40px;
 }
+
+.prev-btn,
+.next-btn {
+    position: relative;
+    top: -45px;
+    left: 100px;
+}
+
 .prev-btn:hover {
     cursor: pointer;
     color: grey;
     background-color: #ddd;
 }
+
 .next-btn:hover {
     cursor: pointer;
     color: grey;
     background-color: #ddd;
 }
+
 .game-list {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(2, auto);
-    gap: 5px;
+    gap: 10px;
     width: 100%;
     max-width: 1900px;
     padding: 0px 10px;
     justify-content: center;
-    margin-top: 0px;
+    margin-top: -40px;
 }
+
 .game-card {
     width: 200px;
-    height: 140px;
+    height: 180px;
     border-radius: 10px;
     border: 1px solid #ddd;
     text-align: center;
     transition: 0.3s ease-in-out;
     box-sizing: border-box;
-    position: relative;
 }
+
 .game-card iframe {
-    width: 80%;
-    height: 75px;
+    width: 85%;
+    height: 150px;
     border: none;
 }
+
 .game-info {
     font-size: 8px;
     font-weight: bold;
@@ -66,46 +76,55 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
 .game-card:hover {
     background-color: red;
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .highlight {
     font-size: 25px;
     display: block;
     padding-bottom: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
+
 @media (max-width: 480px) {
     .game-list {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
+
     .game-card {
         width: 150px;
         height: 100px;
     }
+
     .game-card iframe {
         height: 60px;
     }
 }
+
 @media (max-width: 768px) {
     .game-list {
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
     }
 }
+
 @media (max-width: 1366px) {
     .game-list {
         max-width: 1200px;
     }
 }
+
 @media (max-width: 1920px) {
     .game-list {
         max-width: 1600px;
     }
 }
+
 @media (max-width: 2560px) {
     .game-list {
         max-width: 1900px;

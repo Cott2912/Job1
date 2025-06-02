@@ -8,6 +8,7 @@ import { CiSearch } from "react-icons/ci";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { IoShuffle, IoSunnyOutline, IoMoonOutline } from "react-icons/io5";
 import { ThemeContext } from "./Themecontext";
+import { NavLink } from "react-router-dom";
 
 const Header = ({ toggleSidebar }) => {
   const { isDark, toggleTheme } = useContext(ThemeContext);
@@ -16,28 +17,28 @@ const Header = ({ toggleSidebar }) => {
       <div className="menu-icon" onClick={toggleSidebar}>
         <RiMenu4Line />
       </div>
-      <div className="logo">1GAMES.IO</div>
+      <NavLink to="/1Game.io" className="logo">1GAMES.IO</NavLink>
       <nav className="nav-links">
         <GrUpdate />
-        <span className="mouse">Updated</span>
+        <NavLink to="/updated" className="mouse">Updated</NavLink>
         <IoIosTrendingUp />
-        <span className="mouse">Trending</span>
+        <NavLink to="/trending" className="mouse">Trending</NavLink>
         <FaRegStar />
-        <span className="mouse">New Games</span>
+        <NavLink to="/newgame" className="mouse">New Games</NavLink>
       </nav>
       <div className="search-bar">
-        <input type="text" placeholder="Search..." />
+        <input className="Search-style" type="text" placeholder="Search..." />
         <CiSearch />
       </div>
       <div className="icons">
         <IoIosHeartEmpty />
         <IoShuffle />
         {isDark ? (
-          <IoSunnyOutline onClick={toggleTheme} />) 
+          <IoSunnyOutline onClick={toggleTheme} />)
           :
           (
-          <IoMoonOutline onClick={toggleTheme} />)
-          }
+            <IoMoonOutline onClick={toggleTheme} />)
+        }
       </div>
     </header>
   );

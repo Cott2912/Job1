@@ -1,18 +1,19 @@
 body {
   margin: 0;
   font-family: 'Fredoka', sans-serif;
-
-  background-color: #fff;
-  color: #000;
+  /* color: #000; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 code {
   font-family: 'Courier New', monospace;
 }
+
 .App {
   text-align: center;
 }
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,14 +24,16 @@ code {
   font-size: calc(10px + 2vmin);
   color: white;
 }
-Link
-.App-link {
+
+Link .App-link {
   color: #61dafb;
 }
+
 body.light-theme {
   background-color: #fff;
-  color: #000;
+  color: #514f4f;
 }
+
 body.dark-theme {
   background-color: #333;
   color: #fff;

@@ -1,7 +1,7 @@
 .hihi {
     position: absolute;
     top: 165px;
-    right: -190px;
+    right: 50px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, auto);
@@ -13,6 +13,7 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     margin-top: -100px;
 }
+
 .haha {
     background-color: #2a2a2a;
     padding: 10px;
@@ -20,35 +21,45 @@
     text-align: center;
     color: white;
     font-size: 10px;
-    height: 100px;
-    width: 100px;
+    height: 170px;
+    width: 150px;
 }
+
 .game-iframe {
-    width: 80%;
-    height: 60px;
+    width: 90%;
+    height: 140px;
     border-radius: 5px;
     border: none;
 }
+
 .game-title {
     margin: 5px 0;
     font-weight: bold;
     font-size: 15px;
 }
+
+.haha:hover {
+    color: orangered;
+}
+
 @media (max-width: 480px) {
     .hihi {
         grid-template-columns: repeat(1, 1fr);
         width: 200px;
         right: -150px;
     }
+
     .haha {
         width: 90px;
         height: 80px;
     }
+
     .game-iframe {
         width: 100%;
         height: 50px;
     }
 }
+
 @media (max-width: 768px) {
     .hihi {
         grid-template-columns: repeat(2, 1fr);
@@ -65,16 +76,19 @@
         font-size: 12px;
     }
 }
+
 @media (max-width: 1366px) {
     .hihi {
         max-width: 280px;
     }
 }
+
 @media (max-width: 1920px) {
     .hihi {
         max-width: 300px;
     }
 }
+
 @media (max-width: 2560px) {
     .hihi {
         max-width: 350px;

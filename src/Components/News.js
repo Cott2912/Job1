@@ -14,10 +14,10 @@ const News = ({ title }) => {
   const [startIndex, setStartIndex] = useState(0);
   const navigate = useNavigate();
 
-  const visibleGames = games.slice(startIndex, startIndex + 12);
+  const visibleGames = games.slice(startIndex, startIndex + 18);
 
   const handleNext = () => {
-    if (startIndex + 12 < 30) {
+    if (startIndex + 18 < 30) {
       setStartIndex(startIndex + 1);
     }
   };
@@ -32,7 +32,7 @@ const News = ({ title }) => {
       <div className="game-container">
         <div className="controls">
           {startIndex > 0 && <button className="prev-btn" onClick={handlePrev}><IoChevronBack /></button>}
-          {startIndex + 12 < 30 && <button className="next-btn" onClick={handleNext}><GrNext /></button>}
+          {startIndex + 18 < 30 && <button className="next-btn" onClick={handleNext}><GrNext /></button>}
         </div>
         <div className="game-list">
           {visibleGames.map((game) => (

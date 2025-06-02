@@ -5,17 +5,17 @@ import News from "../Components/News";
 import About1Games from "../Components/About1Game";
 import Reading from "../Components/Reading";
 
+
 const HomePage = () => {
     const [isSidebarOpen, setSidebarOpen] = useState(false);
     const toggleSidebar = () => {
-        setSidebarOpen(!isSidebarOpen); 
+        setSidebarOpen(!isSidebarOpen);
     };
     const closeSidebar = () => {
-        setSidebarOpen(false); 
+        setSidebarOpen(false);
     };
     return (
         <>
-            <Header toggleSidebar={toggleSidebar} />
             <Sidebar isOpen={isSidebarOpen} closeSidebar={closeSidebar} />
             <div>
                 <News title="Featured Games" />

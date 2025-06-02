@@ -6,7 +6,9 @@
     max-width: 1200px;
     margin: 0 auto;
     transform: translateX(-110px);
+    margin-top: -50px;
 }
+
 .game-cover {
     width: 70%;
     max-width: 800px;
@@ -14,6 +16,7 @@
     margin: 20px 0;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
+
 .game-frame {
     width: 75vw;
     max-width: 1200px;
@@ -23,43 +26,52 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     margin-top: 30px;
 }
+
 @media (max-width: 480px) {
     .game-detail-page {
         padding: 20px;
         max-width: 100%;
         transform: translateX(0);
     }
+
     .game-cover {
         width: 90%;
     }
+
     .game-frame {
         width: 100%;
         height: 60vh;
     }
 }
+
 @media (max-width: 768px) {
     .game-detail-page {
         padding: 30px;
         max-width: 95%;
     }
+
     .game-cover {
         width: 85%;
     }
+
     .game-frame {
         width: 90%;
         height: 70vh;
     }
 }
+
 @media (max-width: 1366px) {
     .game-detail-page {
         max-width: 85%;
     }
 }
+
 @media (max-width: 1920px) {
     .game-detail-page {
         max-width: 90%;
     }
 }
+
 @media (max-width: 2560px) {
     .game-detail-page {
         max-width: 95%;

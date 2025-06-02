@@ -9,7 +9,6 @@ const CategoryPage = () => {
   const toggleSidebar = () => setSidebarOpen(!isSidebarOpen);
   return (
     <>
-      <Header toggleSidebar={toggleSidebar} />
       <SideBar isOpen={isSidebarOpen} closeSidebar={toggleSidebar} />
       <News />
       <About1Games />

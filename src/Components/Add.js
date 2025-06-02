@@ -1,9 +1,8 @@
 import "../Style/Add.css";
-
 const list = Array.from({ length: 8 }, (_, i) => ({
   id: i + 1,
   name: `Game ${i + 1}`,
-  url: `https://1games.io/game${i + 1}`, 
+  url: `https://1games.io/game${i + 1}`,
 }));
 
 const Add = () => {
@@ -11,9 +10,9 @@ const Add = () => {
     <div className="hihi">
       {list.map(game => (
         <div key={game.id} className="haha">
-          <iframe 
-            src={game.url} 
-            title={game.name} 
+          <iframe
+            src={game.url}
+            title={game.name}
             allowFullScreen
             className="game-iframe">
           </iframe>

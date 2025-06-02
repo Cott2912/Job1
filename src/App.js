@@ -12,6 +12,8 @@ import DMCA from './Pages/DMCA';
 import PrivacyPolicy from './Pages/PrivacyPolicy';
 import TermsandConditions from './Pages/TermsandConditions';
 import { ThemeProvider } from './Components/Themecontext';
+import background2 from './background/background2.jpg';
+
 
 function App() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -21,6 +23,7 @@ function App() {
   return (
     <ThemeProvider>
       <div className="App">
+        <div className='background'></div>
         <Router>
           <Header toggleSidebar={toggleSidebar} />
           <Sidebar isOpen={isSidebarOpen} closeSidebar={closeSidebar} />

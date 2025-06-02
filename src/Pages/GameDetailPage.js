@@ -17,14 +17,14 @@ const GameDetailPage = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
   const toggleSidebar = () => setSidebarOpen(!isSidebarOpen);
   const closeSidebar = () => setSidebarOpen(false);
-  
+
   useEffect(() => {
     setGame(games.find(g => g.id === parseInt(gameId)) || null);
   }, [gameId]);
   return (
     <>
-      <Header toggleSidebar={toggleSidebar} /> 
-      <Sidebar isOpen={isSidebarOpen} closeSidebar={closeSidebar} /> 
+      {/* <Header toggleSidebar={toggleSidebar} /> */}
+      <Sidebar isOpen={isSidebarOpen} closeSidebar={closeSidebar} />
 
       <div className="game-detail-page">
         {game ? (
@@ -35,14 +35,14 @@ const GameDetailPage = () => {
               allowFullScreen
               title={`Game ${game.id}`}
             ></iframe>
-          </>) 
-          : 
+          </>)
+          :
           (
-          <p>Not Found</p>
+            <p>Not Found</p>
           )}
-          <Add />
-          <Button />
-          <GameLinkComponent/>
+        <Add />
+        <Button />
+        <GameLinkComponent />
       </div>
     </>
   );
