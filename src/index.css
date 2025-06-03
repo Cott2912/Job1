@@ -1,7 +1,6 @@
 body {
   margin: 0;
   font-family: 'Fredoka', sans-serif;
-  /* color: #000; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -30,11 +29,13 @@ Link .App-link {
 }
 
 body.light-theme {
-  background-color: #fff;
+  background: url('background/bg12.avif') no-repeat center center;
   color: #514f4f;
+  background-size: cover;
 }
 
 body.dark-theme {
-  background-color: #333;
+  background: url('background/bg9.jpg') no-repeat center center;
+  background-size: cover;
   color: #fff;
 }

@@ -8,17 +8,20 @@
     background: #262626;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
 .game-field {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
 }
+
 label {
     font-size: 16px;
     color: white;
     font-weight: bold;
 }
+
 input {
     flex: 1;
     padding: 8px;
@@ -28,11 +31,13 @@ input {
     color: white;
     font-size: 16px;
 }
+
 .highlighted {
     background: #460799;
     font-weight: bold;
     padding: 8px;
 }
+
 button {
     padding: 8px 14px;
     cursor: pointer;
@@ -41,14 +46,17 @@ button {
     font-size: 16px;
     transition: 0.2s ease-in-out;
 }
+
 .open-btn {
     background-color: #ff9800;
     color: white;
 }
+
 .copy-btn {
     background-color: #4CAF50;
     color: white;
 }
+
 .tooltip {
     position: fixed;
     top: 10px;
@@ -60,52 +68,4 @@ button {
     font-size: 14px;
     white-space: nowrap;
     z-index: 1000;
-}
-@media (max-width: 480px) {
-    .game-link-container {
-        width: 90%;
-        padding: 15px;
-    }
-    .game-field {
-        flex-direction: column;
-        gap: 10px;
-    }
-    label {
-        font-size: 14px;
-    }
-    input {
-        font-size: 14px;
-        padding: 6px;
-    }
-    button {
-        font-size: 14px;
-        padding: 6px 12px;
-    }
-}
-@media (max-width: 768px) {
-    .game-link-container {
-        width: 85%;
-        padding: 18px;
-    }
-    .game-field {
-        gap: 15px;
-    }
-    label {
-        font-size: 15px;
-    }
-}
-@media (max-width: 1366px) {
-    .game-link-container {
-        max-width: 800px;
-    }
-}
-@media (max-width: 1920px) {
-    .game-link-container {
-        max-width: 850px;
-    }
-}
-@media (max-width: 2560px) {
-    .game-link-container {
-        max-width: 900px;
-    }
 }

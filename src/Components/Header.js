@@ -31,14 +31,14 @@ const Header = ({ toggleSidebar }) => {
         <CiSearch />
       </div>
       <div className="icons">
-        <IoIosHeartEmpty />
-        <IoShuffle />
         {isDark ? (
           <IoSunnyOutline onClick={toggleTheme} />)
           :
           (
             <IoMoonOutline onClick={toggleTheme} />)
         }
+        <IoIosHeartEmpty />
+        <IoShuffle />
       </div>
     </header>
   );

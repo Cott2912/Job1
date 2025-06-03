@@ -12,7 +12,7 @@ import DMCA from './Pages/DMCA';
 import PrivacyPolicy from './Pages/PrivacyPolicy';
 import TermsandConditions from './Pages/TermsandConditions';
 import { ThemeProvider } from './Components/Themecontext';
-import background2 from './background/background2.jpg';
+
 
 
 function App() {
@@ -29,7 +29,9 @@ function App() {
           <Sidebar isOpen={isSidebarOpen} closeSidebar={closeSidebar} />
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/game/:gameId" element={<GameDetailPage />} />
+            <Route path="/game/:gameId" element={<GameDetailPage isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} closeSidebar={closeSidebar} />} />
+
+            {/* <Route path="/game/:gameId" element={<GameDetailPage />} /> */}
             <Route path="/contact-us" element={<ContactUs />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/DMCA" element={<DMCA />} />

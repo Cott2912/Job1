@@ -1,71 +1,43 @@
-.footer {
-    padding: 20px;
-    text-align: center;
-    position: relative;
-}
-.footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-.footer-links a {
-    color: rgb(10, 107, 155);
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-}
-.footer-links a:hover {
-    color: #ff4500;
-}
-.footer-link {
-    text-decoration: none;
-    color: white;
-    padding: 5px 10px;
-    position: relative;
-}
-.footer-link.active::after {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: red;
-}
-@media (max-width: 480px) {
+    .footer {
+        padding: 20px;
+        text-align: center;
+        position: relative;
+    }
+
     .footer-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
     }
 
     .footer-links a {
-        font-size: 14px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        transition: color 0.3s ease-in-out;
     }
-}
-@media (max-width: 768px) {
-    .footer-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
+
+    .footer-links a:visited {
+        color: inherit;
     }
-    .footer-links a {
-        font-size: 15px;
+
+    .footer-links a:hover {
+        color: #ff4500;
     }
-}
-@media (max-width: 1366px) {
-    .footer-links {
-        max-width: 85%;
+
+    .footer-link {
+        text-decoration: none;
+        padding: 5px 10px;
+        position: relative;
     }
-}
-@media (max-width: 1920px) {
-    .footer-links {
-        max-width: 90%;
+
+    .footer-link.active::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: red;
+        border-radius: 12%;
     }
-}
-@media (max-width: 2560px) {
-    .footer-links {
-        max-width: 95%;
-    }
-}

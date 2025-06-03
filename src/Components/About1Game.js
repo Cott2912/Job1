@@ -12,23 +12,36 @@ import { IoExtensionPuzzleOutline } from "react-icons/io5";
 import { FaVolleyballBall } from "react-icons/fa";
 import { GrNext } from "react-icons/gr";
 import { IoChevronBack } from "react-icons/io5";
+import { IoDiamondOutline } from "react-icons/io5";
+import { CiCreditCard2 } from "react-icons/ci";
+import { FcFactory } from "react-icons/fc";
+import { FcCompactCamera } from "react-icons/fc";
 const categories = [
-  { name: "Action", icon:<FaFire /> },
-  { name: "Adventure", icon:<IoIosBookmarks /> },
-  { name: "Arcade", icon:<GiGamepad /> },
-  { name: "Clicker", icon:<MdAdsClick />},
-  { name: "Driving", icon:<FaCarOn /> },
-  { name: "Horror", icon:<GiGhost /> },
-  { name: ".io", icon:<GiDrippingSword /> },
-  { name: "Shooter", icon:<FaGun /> },
-  { name: "Puzzle", icon:<IoExtensionPuzzleOutline /> },
+  { name: "Action", icon: <FaFire /> },
+  { name: "Adventure", icon: <IoIosBookmarks /> },
+  { name: "Arcade", icon: <GiGamepad /> },
+  { name: "Clicker", icon: <MdAdsClick /> },
+  { name: "Driving", icon: <FaCarOn /> },
+  { name: "Horror", icon: <GiGhost /> },
+  { name: ".io", icon: <GiDrippingSword /> },
+  { name: "Shooter", icon: <FaGun /> },
+  { name: "Puzzle", icon: <IoExtensionPuzzleOutline /> },
   { name: "Sports", icon: <FaVolleyballBall /> },
+  { name: "Diamond", icon: <IoDiamondOutline /> },
+  { name: "Card", icon: <CiCreditCard2 /> },
+  { name: "Factory", icon: <FcFactory /> },
+  { name: "Camera", icon: <FcCompactCamera /> },
+  { name: "Action", icon: <FaFire /> },
+  { name: "Camera", icon: <FcCompactCamera /> },
+  { name: "Action", icon: <FaFire /> },
+  { name: "Camera", icon: <FcCompactCamera /> },
+  { name: "Action", icon: <FaFire /> },
 ];
 const About1Games = () => {
   const [startIndex, setStartIndex] = useState(0);
-  const visibleCategories = categories.slice(startIndex, startIndex + 6);
+  const visibleCategories = categories.slice(startIndex, startIndex + 12);
   const handleNext = () => {
-    if (startIndex + 6 < categories.length) {
+    if (startIndex + 12 < categories.length) {
       setStartIndex(startIndex + 1);
     }
   };
@@ -46,18 +59,18 @@ const About1Games = () => {
           Enjoy a wide array of online games completely free of charge!
         </p>
       </div>
-      <div className="category-container">
+      <div className="category-container-ab">
         <div className="category-scroll-wrapper">
-          <button className="prev-btn" onClick={handlePrev} disabled={startIndex === 0}><IoChevronBack /></button>
+          <button className="prev-btn-ab" onClick={handlePrev} disabled={startIndex === 0}><IoChevronBack /></button>
           <div className="category-list">
             {visibleCategories.map((category, index) => (
               <div key={index} className="category-item">
-                <span className="icon">{category.icon}</span>
-                <span className="name">{category.name}</span>
+                <span className="icon-ab">{category.icon}</span>
+                <span className="name-ab">{category.name}</span>
               </div>
             ))}
           </div>
-          <button className="next-btn" onClick={handleNext} disabled={startIndex + 6 >= categories.length}><GrNext /></button>
+          <button className="next-btn-ab" onClick={handleNext} disabled={startIndex + 12 >= categories.length}><GrNext /></button>
         </div>
       </div>
     </div>
