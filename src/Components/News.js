@@ -4,18 +4,20 @@ import { useNavigate } from "react-router-dom";
 import { GrNext } from "react-icons/gr";
 import { IoChevronBack } from "react-icons/io5";
 
-const games = Array.from({ length: 30 }, (_, i) => ({
-  id: i + 1,
-  name: `Game ${i + 1}`,
-  url: `https://1games.io/game${i + 1}`,
+export const gameNames = [
+  "Speed Legends", "Wacky Flip", "Geometry Lite", "Wave Dash", "Basketball Super", "Speed Start", "Curve Rush", " Italian Brainrot", "Crazy Cattle", "Escape Road", "Ragdoll Hit", "Chill Guy", "Spole 2", "Indoor Soccer", "Ragdoll Playground",
+  "Crazy Animal", "Chicken Jockey", "Wyrmdash", "Fall Flat Battle", "Tap Road Beat", "Tap Road Beat", "Golf Git", "Tralalero Tralala", "REPO", "Gunspin", "2048", "Wordle", "Poor Tracks", "Snow Road 3D", "Snow Rider", "Monster Tracks"
+];
+export const games = gameNames.map((name, index) => ({
+  id: index + 1,
+  name: name,
+  imageUrl: `/imagesG/Game${index + 1}.webp`,
 }));
 
 const News = ({ title }) => {
   const [startIndex, setStartIndex] = useState(0);
   const navigate = useNavigate();
-
   const visibleGames = games.slice(startIndex, startIndex + 18);
-
   const handleNext = () => {
     if (startIndex + 18 < 30) {
       setStartIndex(startIndex + 1);
@@ -37,7 +39,7 @@ const News = ({ title }) => {
         <div className="game-list">
           {visibleGames.map((game) => (
             <div key={game.id} className="game-card" onClick={() => navigate(`/game/${game.id}`)}>
-              <iframe src={game.url} title={game.name} allowFullScreen></iframe>
+              <img src={game.imageUrl} alt={game.name} className="game-image" />
               <div className="game-info">{game.name}</div>
             </div>
           ))}
@@ -48,3 +50,4 @@ const News = ({ title }) => {
 };
 
 export default News;
+

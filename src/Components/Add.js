@@ -1,22 +1,19 @@
 import "../Style/Add.css";
-const list = Array.from({ length: 8 }, (_, i) => ({
-  id: i + 1,
-  name: `Game ${i + 1}`,
-  url: `https://1games.io/game${i + 1}`,
-}));
+import { games } from "./News";
+import { getRandomGames } from './1Line';
 
 const Add = () => {
+  const randomGames = getRandomGames(games, 8);
   return (
-    <div className="hihi">
-      {list.map(game => (
-        <div key={game.id} className="haha">
-          <iframe
-            src={game.url}
-            title={game.name}
-            allowFullScreen
-            className="game-iframe">
-          </iframe>
-          <h3 className="game-title">{game.name}</h3>
+    <div className="Add-container">
+      {randomGames.map(game => (
+        <div key={game.id} className="Add-child-container">
+          <img
+            src={game.imageUrl}
+            alt={game.name}
+            className="game-image-Add"
+          />
+          <h3 className="game-title-Add">{game.name}</h3>
         </div>
       ))}
     </div>

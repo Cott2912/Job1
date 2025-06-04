@@ -1,0 +1,50 @@
+.oneline-game {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.style-title-oneline {
+    position: relative;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    right: 948px;
+
+}
+
+.style-game-item {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.game-item {
+    width: 195px;
+    height: 190px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+.game-item:hover {
+    cursor: pointer;
+    background-color: red;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+;
+
+.game-image {
+    width: 80px;
+    height: 80px;
+}

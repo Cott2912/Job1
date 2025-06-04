@@ -1,43 +1,44 @@
-.hihi {
+.Add-container {
     position: absolute;
-    top: 165px;
-    right: 50px;
+    top: 60px;
+    margin-left: 1250px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, auto);
-    gap: 2px;
+    gap: 10px;
     z-index: 1000;
-    width: 300px;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-    margin-top: -100px;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(138, 131, 131, 0.5);
+
 }
 
-.haha {
-    background-color: #2a2a2a;
-    padding: 10px;
-    border-radius: 8px;
+.Add-child-container {
+    background-color: #3a3a3a;
+    padding: 12px;
+    border-radius: 10px;
     text-align: center;
     color: white;
-    font-size: 10px;
+    font-size: 12px;
     height: 170px;
     width: 150px;
+    transition: 0.3s ease-in-out;
 }
 
-.game-iframe {
-    width: 90%;
+.game-image-Add {
+    width: 100%;
     height: 140px;
-    border-radius: 5px;
-    border: none;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
-.game-title {
-    margin: 5px 0;
+.game-title-Add {
+    margin-top: 8px;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 14px;
 }
 
-.haha:hover {
-    color: orangered;
+.Add-child-container:hover {
+    background-color: orangered;
+    transform: scale(1.05);
+    cursor: pointer;
 }

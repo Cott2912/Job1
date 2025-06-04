@@ -2,13 +2,12 @@
     position: fixed;
     left: -400px;
     top: 0;
-    width: 300px;
+    width: 200px;
     height: 100vh;
-    background: #2d0451;
+    background: #39373a;
     color: white;
     transition: 0.3s ease-in-out;
     padding: 20px;
-    overflow-y: auto;
     z-index: 1001;
     scrollbar-width: none;
 }
@@ -55,16 +54,15 @@
 
 .back-btn {
     position: absolute;
-    top: 20%;
-    right: -15px;
+    top: 8%;
+    right: -12px;
     transform: translateY(-50%);
-    background-color: #4d4db5;
+    background-color: #39373a;
     color: white;
     border: 3px solid white;
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    font-size: 30px;
     cursor: pointer;
     z-index: 1002;
     display: flex;

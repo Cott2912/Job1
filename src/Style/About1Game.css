@@ -63,14 +63,13 @@
 
 .category-list {
     display: flex;
-    overflow: hidden;
     gap: 12px;
     padding: 0 20px;
 }
 
 .category-item {
     background-color: #63727d;
-    border-radius: 8px;
+    border-radius: 15px;
     padding: 15px 10px;
     width: 70px;
     height: 70px;
@@ -87,7 +86,7 @@
     background-color: #0b4a6e;
 }
 
-.category-item .icon {
+.category-item .icon-ab {
     font-size: 24px;
     margin-bottom: 6px;
     color: #fff;

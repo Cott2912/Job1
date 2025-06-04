@@ -4,7 +4,8 @@ import News from "../Components/News";
 import About1Games from "../Components/About1Game";
 import Reading from "../Components/Reading";
 import PlusButton from "../Components/PlusButton";
-
+import OneLine from "../Components/1Line";
+import RecentPlay from "../Components/RecentPlay";
 
 const HomePage = () => {
     const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -21,9 +22,9 @@ const HomePage = () => {
                 <PlusButton />
                 <News title="Featured Games" />
                 <PlusButton />
-                <News title="New Games" />
+                <OneLine title="New Game" />
                 <PlusButton />
-                <News title="Recents Play" />
+                <RecentPlay title="Recent Play" />
                 <PlusButton />
                 <News title="Trending Now" />
                 <PlusButton />

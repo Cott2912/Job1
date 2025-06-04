@@ -1,0 +1,25 @@
+.style-ViewMore {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #f5f2f2;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    height: 100px;
+    top: 135px;
+    right: 420px;
+}
+
+.style-ViewMore:hover {
+    background-color: rgb(23, 7, 1);
+    color: rgb(230, 208, 208);
+    transform: scale(1.005);
+}
