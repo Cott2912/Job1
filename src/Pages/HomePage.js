@@ -19,17 +19,16 @@ const HomePage = () => {
         <>
             <Sidebar isOpen={isSidebarOpen} closeSidebar={closeSidebar} />
             <div>
-                <PlusButton />
+                <PlusButton to="/features.games" />
                 <News title="Featured Games" />
-                <PlusButton />
+                <PlusButton to="news.game" />
                 <OneLine title="New Game" />
-                <PlusButton />
                 <RecentPlay title="Recent Play" />
-                <PlusButton />
+                <PlusButton to="trending-now" />
                 <News title="Trending Now" />
-                <PlusButton />
+                <PlusButton to="hot-games" />
                 <News title="Hot Games" />
-                <PlusButton />
+                <PlusButton to="1games-series" />
                 <News title="1Games Series" />
             </div>
             <div><About1Games /></div>
@@ -39,3 +38,4 @@ const HomePage = () => {
 };
 
 export default HomePage;
+

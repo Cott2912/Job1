@@ -1,0 +1,65 @@
+.recents-container {
+    padding: 40px 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.recents-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: -10px;
+}
+
+.recents-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.recents-box {
+    border-radius: 16px;
+    padding: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 50px rgba(0, 0, 0, 0.15);
+}
+
+.section-heading {
+    color: #ff6600;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.section-subheading {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 20px;
+
+}
+
+.recents-box p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.recents-box ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.recents-box li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.recents-box a {
+    color: #ff6600;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.closing-text {
+    margin-top: 30px;
+    font-style: italic;
+}

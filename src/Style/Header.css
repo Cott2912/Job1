@@ -8,7 +8,6 @@
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-
 }
 
 .menu-icon {
@@ -40,10 +39,16 @@
     margin-left: 100px;
 }
 
+.nav-links .mouse.active {
+    border-bottom: 2px solid #ff4500;
+    transition: border-bottom 0.1s ease, color 0.3s ease;
+    padding-bottom: 10px;
+
+}
+
 .nav-links span {
     font-size: 16px;
     font-weight: bold;
-    color: white;
     transition: color 0.3s ease-in-out;
 }
 
@@ -58,6 +63,7 @@
 }
 
 .search-bar input {
+    color: #cdb8ed;
     padding: 8px;
     border-radius: 6px;
     border: 2px solid rgb(242, 122, 220);

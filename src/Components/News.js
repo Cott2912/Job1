@@ -11,7 +11,7 @@ export const gameNames = [
 export const games = gameNames.map((name, index) => ({
   id: index + 1,
   name: name,
-  imageUrl: `/imagesG/Game${index + 1}.webp`,
+  imageUrl: process.env.PUBLIC_URL + `/imagesG/Game${index + 1}.webp`,
 }));
 
 const News = ({ title }) => {
@@ -48,6 +48,5 @@ const News = ({ title }) => {
     </div>
   );
 };
-
 export default News;
 

@@ -20,24 +20,24 @@ import { TbMoodCrazyHappy } from "react-icons/tb";
 import { GiGiantSquid } from "react-icons/gi";
 const categories = [
   { name: "Home", icon: <IoHomeOutline />, path: "/" },
-  {name: "Category Page", icon: <FaGamepad />, path: "/category/games"},
-  { name: "Updated", icon: <MdOutlineBrowserUpdated />, path: "/category/updated" },
-  { name: "Recently Played", icon:<IoGameControllerOutline />, path: "/category/recently-played" },
-  { name: "Trending", icon:<HiTrendingUp />, path: "/category/trending" },
-  { name: "Top Popular", icon:<TbChartBarPopular />, path: "/category/top-popular" },
-  { name: "Tags", icon:<BsTags />, path: "/category/tags" },
-  { name: "1Games Series", icon:<SiAmazongames />, path: "/category/1games-series" },
-  { name: "Action Games", icon:<RiSwordFill />, path: "/category/action" },
-  { name: "Arcade Games", icon: <GiSpiderEye />, path: "/category/arcade" },
-  { name: "Clicker Games", icon:<PiMouseDuotone />, path: "/category/clicker" },
-  { name: "Sports Games", icon:<CiBasketball />, path: "/category/sports" },
-  { name: "Survival Games", icon: <AiFillFire />, path: "/category/survival" },
-  { name: "Cool Math", icon:<CiIceCream />, path: "/category/cool-math" },
-  { name: "Crazy Games", icon: <TbMoodCrazyHappy />, path: "/category/crazy" },
-  { name: "Squid Games", icon: <GiGiantSquid />, path: "/category/squid" },
+  { name: "Category Page", icon: <FaGamepad />, path: "/category/:category" },
+  { name: "Updated", icon: <MdOutlineBrowserUpdated />, path: "/updated" },
+  { name: "Recently Played", icon: <IoGameControllerOutline />, path: "/category/recently-played" },
+  { name: "Trending", icon: <HiTrendingUp />, path: "/trending" },
+  { name: "New Games", icon: <TbChartBarPopular />, path: "/newgame" },
+  { name: "Tags", icon: <BsTags />, path: "/category/:category" },
+  { name: "1Games Series", icon: <SiAmazongames />, path: "/category/:category" },
+  { name: "Action Games", icon: <RiSwordFill />, path: "/category/:category" },
+  { name: "Arcade Games", icon: <GiSpiderEye />, path: "/category/:category" },
+  { name: "Clicker Games", icon: <PiMouseDuotone />, path: "/category/:category" },
+  { name: "Sports Games", icon: <CiBasketball />, path: "/category/:category" },
+  { name: "Survival Games", icon: <AiFillFire />, path: "/category/:category" },
+  { name: "Cool Math", icon: <CiIceCream />, path: "/category/:category" },
+  { name: "Crazy Games", icon: <TbMoodCrazyHappy />, path: "/category/:category" },
+  { name: "Squid Games", icon: <GiGiantSquid />, path: "/category/:category" },
 ];
 const Sidebar = ({ isOpen, closeSidebar }) => {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   useEffect(() => {
     if (isOpen) {
       document.body.classList.add("no-scroll");
@@ -66,7 +66,7 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
           {categories.map((category, index) => (
             <li
               key={index}
-              onClick={() => handleNavigate(category.path)} 
+              onClick={() => handleNavigate(category.path)}
               style={{ cursor: "pointer" }} >
               <span>{category.icon}</span> {category.name}
             </li>

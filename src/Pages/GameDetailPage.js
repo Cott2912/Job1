@@ -6,7 +6,6 @@ import Button from "../Components/ButtonDisplay";
 import GameLinkComponent from "../Components/GameLinkComponent";
 import Sidebar from "../Components/SideBar";
 import { games } from "../Components/News";
-import { getRandomGames } from "../Components/1Line";
 
 const GameDetailPage = ({ isSidebarOpen, toggleSidebar, closeSidebar }) => {
   const { gameId } = useParams();
@@ -27,7 +26,6 @@ const GameDetailPage = ({ isSidebarOpen, toggleSidebar, closeSidebar }) => {
               alt={game.name}
               className="game-image-detail"
             />
-            {/* <h2 className="game-title-detail">{game.name}</h2> */}
           </div>
         ) : (
           <p className="not-found-text">Game Not Found</p>

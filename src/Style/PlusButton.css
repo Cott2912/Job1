@@ -1,22 +1,39 @@
 .plbutton-container {
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     background-color: #d6eef3;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
-    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     margin-left: 220px;
     top: 30px;
+
 }
 
-.plbutton-container:hover {
-    transform: scale(1.1);
+.ripple {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 153, 255, 0.3);
+    border-radius: 50%;
+    animation: ripple-animation 2s infinite ease-out;
+    z-index: 0;
+}
+
+@keyframes ripple-animation {
+    0% {
+        transform: scale(0.3);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: scale(3.5);
+        opacity: 0;
+    }
 }
 
 .pl-icon {
@@ -24,4 +41,18 @@
     color: orange;
     font-weight: bold;
     line-height: 1;
+    z-index: 1;
+    animation: bounce-icon 2s infinite ease-in-out;
+}
+
+@keyframes bounce-icon {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(3px);
+    }
 }
