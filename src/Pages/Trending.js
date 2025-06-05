@@ -4,15 +4,19 @@ import PlusButton from "../Components/PlusButton";
 import AddPage from "../Components/AddPage";
 import { GoDotFill } from "react-icons/go";
 const gameCategories = [
-    "Action Games", "Adventure Games", "Puzzle Games", "Racing Games", "Sport Game"
+    { name: "Action Games", path: "/action-games" },
+    { name: "Adventure Games", path: "/adventure-games" },
+    { name: "Puzzle Games", path: "/puzzle-games" },
+    { name: "Racing Games", path: "/racing-games" },
+    { name: "Sport Game", path: "sport-games" }
 ];
 const TrendingGames = () => {
     return (
         <>
             {gameCategories.map((category, index) => (
                 <React.Fragment key={index}>
-                    <PlusButton />
-                    <News title={category} />
+                    <PlusButton to={category.path} title={category.name} />
+                    <News title={category.name} />
                 </React.Fragment>
             ))}
             <AddPage />
