@@ -3,7 +3,9 @@
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 0;
 }
 
 .style-title-oneline {
@@ -50,4 +52,32 @@
     height: 150px;
     object-fit: cover;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 930px) {
+    .oneline-game {
+        margin-top: -20px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .style-game-item {
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+    }
+
+    .game-item {
+        width: 180px;
+        height: 170px;
+    }
+
+    .game-image {
+        height: 120px;
+    }
+
+    .style-title-oneline {
+        font-size: 22px;
+        right: 120px;
+    }
 }

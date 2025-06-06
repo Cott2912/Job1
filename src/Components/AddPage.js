@@ -1,7 +1,7 @@
 import React from "react";
 import '../Style/AddPage.css';
 import { useState } from "react";
-const AddPage = ({ totalPages = 8 }) => {
+const AddPage = ({ totalPages = 5 }) => {
     const [currentPage, setCurrentPage] = useState(1);
 
     const goToPage = (page) => {

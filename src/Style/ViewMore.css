@@ -14,12 +14,27 @@
     text-decoration: none;
     transition: 0.3s ease-in-out;
     height: 100px;
-    top: 135px;
-    right: 420px;
+    top: -140px;
+    right: -40px;
 }
 
 .style-ViewMore:hover {
     background-color: rgb(23, 7, 1);
     color: rgb(230, 208, 208);
     transform: scale(1.005);
+}
+
+@media screen and (max-width: 930px) {
+    .style-ViewMore {
+        font-size: 12px;
+        padding: 8px 16px;
+        height: 40px;
+        width: 50px;
+        top: -820px;
+        right: -140px;
+        border-radius: 8px;
+        gap: 6px;
+
+    }
+
 }

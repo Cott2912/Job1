@@ -36,7 +36,7 @@
     background-color: #958e8e;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 930px) {
     .pagination-container {
         gap: 4px;
 
@@ -47,5 +47,6 @@
     .double-arrow-button {
         padding: 6px 10px;
         font-size: 14px;
+        width: 40px;
     }
 }

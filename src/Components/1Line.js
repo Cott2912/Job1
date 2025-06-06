@@ -11,24 +11,28 @@ const OneLine = ({ title }) => {
     const randomGames = getRandomGames(games, 9);
     const navigate = useNavigate();
     return (
-        <div className="oneline-game">
-            <h1 className="style-title-oneline">{title}</h1>
-            <div className="style-game-item">
-                {randomGames.map((game) => (
-                    <div
-                        key={game.id}
-                        className="game-item"
-                        onClick={() => navigate(`/game/${game.id}`)}
-                    >
-                        <img src={game.imageUrl} alt={game.name} className="game-image" />
-                        <p>{game.name}</p>
-                    </div>
-                ))}
+        <>
+            <div className="oneline-game">
+                <h1 className="style-title-oneline">{title}</h1>
+                <div className="style-game-item">
+                    {randomGames.map((game) => (
+                        <div
+                            key={game.id}
+                            className="game-item"
+                            onClick={() => navigate(`/game/${game.id}`)}
+                        >
+                            <img src={game.imageUrl} alt={game.name} className="game-image" />
+                            <p>{game.name}</p>
+                        </div>
+                    ))}
+                </div>
+
+                <OneGame />
+                <SixGames />
+
             </div>
-            <OneGame />
-            <SixGames />
             <ViewMore />
-        </div>
+        </>
     );
 }
 export default OneLine;
