@@ -163,3 +163,12 @@ body {
         padding: 15px 10px;
     }
 }
+@media screen and (width: 1920px) and (height: 1080px) {
+    .hide-on-large {
+            display: none;   }
+   }
+@media screen and (max-width: 1366px) and (max-height: 768px) {
+            .hidden-icons {
+                display: none;
+            }
+        }

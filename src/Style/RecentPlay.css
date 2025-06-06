@@ -1,87 +1,102 @@
-.recent-game {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.style-recent-title {
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: -10px;
-    margin-right: 1800px;
-}
-
-.styles-recent-item {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    max-width: 100%;
-    overflow-x: hidden;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.recent-item {
-
-    padding: 12px;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 14px;
-    height: 80px;
-    width: 150px;
-    border: 2px solid #c0b3af;
-    transition: 0.3s ease-in-out;
-
-}
-
-.recent-item:hover {
-    background-color: orangered;
-    transform: scale(1.005);
-    cursor: pointer;
-}
-
-.recent-image {
-    width: 100%;
-    height: 60px;
-    object-fit: cover;
-    border-radius: 8px;
-
-}
-
-.recent-item p {
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-@media (max-width: 930px) {
-    .styles-recent-item {
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        gap: 12px;
-        padding: 10px;
-        scroll-snap-type: x mandatory;
-    }
-
-    .recent-item {
-        flex: 0 0 auto;
-        width: 40%;
-        height: 120px;
-        scroll-snap-align: center;
-    }
-
-    .recent-image {
-        height: 80px;
-    }
-
-    .recent-item p {
-        font-size: 14px;
+    .recent-game {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
     }
 
     .style-recent-title {
-        font-size: 20px;
-        margin-right: 0;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: -10px;
+        margin-right: 1800px;
     }
-}
+
+    .styles-recent-item {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        max-width: 100%;
+        overflow-x: hidden;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .recent-item {
+
+        padding: 12px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 14px;
+        height: 80px;
+        width: 150px;
+        border: 2px solid #c0b3af;
+        transition: 0.3s ease-in-out;
+
+    }
+
+    .recent-item:hover {
+        background-color: orangered;
+        transform: scale(1.005);
+        cursor: pointer;
+    }
+
+    .recent-image {
+        width: 100%;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 8px;
+
+    }
+
+    .recent-item p {
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    @media (max-width: 930px) {
+        .styles-recent-item {
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            gap: 12px;
+            padding: 10px;
+            scroll-snap-type: x mandatory;
+            
+            
+        }
+
+        .recent-item {
+            flex: 0 0 auto;
+            width: 40%;
+            height: 120px;
+            scroll-snap-align: center;
+        }
+
+        .recent-image {
+            height: 80px;
+        }
+
+        .recent-item p {
+            font-size: 14px;
+        }
+
+        .style-recent-title {
+            font-size: 20px;
+            margin-right: 0;
+        }
+    }
+        .recent-game {
+            margin-bottom: 40px;
+           
+        }
+                @media (min-width: 1920px) {
+                    .style-recent-title {
+                        margin-right: 0;
+                        white-space: nowrap;
+                        font-size: 30px;
+                        text-align: left;
+                        margin-left: 10px;
+                    }
+                }

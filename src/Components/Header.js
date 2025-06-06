@@ -54,8 +54,8 @@ const Header = ({ toggleSidebar }) => {
         <CiSearch className="search-icon" onClick={handleSearch} />
       </div>
       <div className="icons">
-        <IoIosHeartEmpty />
-        <IoShuffle />
+        <IoIosHeartEmpty className="hidden-icons"/>
+        <IoShuffle className="hidden-icons"/>
         {isDark ? (
           <IoSunnyOutline onClick={toggleTheme} />)
           :
