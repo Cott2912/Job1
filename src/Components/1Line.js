@@ -8,7 +8,7 @@ export const getRandomGames = (gameList, count) => {
     return gameList.sort(() => Math.random() - 0.5).slice(0, count);
 }
 const OneLine = ({ title }) => {
-    const randomGames = getRandomGames(games, 9);
+    const randomGames = getRandomGames(games, 8);
     const navigate = useNavigate();
     return (
         <>
@@ -26,9 +26,6 @@ const OneLine = ({ title }) => {
                         </div>
                     ))}
                 </div>
-
-                <OneGame />
-                <SixGames />
 
             </div>
             <ViewMore />

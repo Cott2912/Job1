@@ -22,7 +22,8 @@ const HomePage = () => {
                 <PlusButton to="/features.games" />
                 <News title="Featured Games" />
                 <PlusButton to="news.game" />
-                <OneLine title="New Game" />
+                <News title="New Game" />
+                <OneLine />
                 <RecentPlay title="Recent Play" />
                 <PlusButton to="trending-now" />
                 <News title="Trending Now" />

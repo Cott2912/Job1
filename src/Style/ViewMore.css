@@ -12,10 +12,9 @@
     border-radius: 10px;
     border: 2px solid grey;
     text-decoration: none;
-    transition: 0.3s ease-in-out;
     height: 100px;
-    top: -140px;
-    right: -40px;
+    top: -150px;
+    left: 870px;
 }
 
 .style-ViewMore:hover {

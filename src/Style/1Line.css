@@ -1,27 +1,23 @@
 .oneline-game {
     display: flex;
-    flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    margin-top: 0;
 }
 
 .style-title-oneline {
     position: relative;
     font-size: 25px;
     font-weight: bold;
-    margin-bottom: 15px;
-    right: 948px;
+
+
 
 }
 
 .style-game-item {
+    position: relative;
     display: flex;
-    flex-wrap: nowrap;
     gap: 30px;
-    justify-content: center;
+    left: 10px;
     width: 100%;
 
 }
@@ -35,6 +31,7 @@
     transition: 0.3s ease-in-out;
     box-sizing: border-box;
     overflow: hidden;
+
 
 }
 
@@ -68,7 +65,7 @@
     }
 
     .game-item {
-        width: 180px;
+        width: 160px;
         height: 170px;
     }
 
