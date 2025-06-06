@@ -47,18 +47,22 @@ const Header = ({ toggleSidebar }) => {
       </nav>
       <div className="search-bar">
         <input className="Search-style" type="text" placeholder="Search..." value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)} />
+          onChange={(e) => setSearchTerm(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") handleSearch();
+          }} />
         <CiSearch className="search-icon" onClick={handleSearch} />
       </div>
       <div className="icons">
+        <IoIosHeartEmpty />
+        <IoShuffle />
         {isDark ? (
           <IoSunnyOutline onClick={toggleTheme} />)
           :
           (
             <IoMoonOutline onClick={toggleTheme} />)
         }
-        <IoIosHeartEmpty />
-        <IoShuffle />
+
       </div>
     </header>
   );

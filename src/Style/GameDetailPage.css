@@ -5,8 +5,9 @@
     padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
-    transform: translateX(-110px);
+    transform: none;
     margin-top: -30px;
+
 }
 
 .game-container {
@@ -35,4 +36,22 @@
     font-size: 20px;
     font-weight: bold;
     color: red;
+}
+
+@media screen and (max-width: 930px) {
+    .game-detail-page {
+        padding: 20px 10px;
+        margin-top: 0;
+    }
+
+    .game-container {
+        justify-content: center;
+
+    }
+
+    .game-image-detail {
+        max-width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
 }

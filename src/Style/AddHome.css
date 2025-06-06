@@ -1,13 +1,12 @@
 .static-page-container {
     max-width: 900px;
     margin: 0 auto;
-
 }
 
 .breadcrumb,
 .page-title {
     display: flex;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-right: 720px;
     text-align: left;
     margin-left: 0;

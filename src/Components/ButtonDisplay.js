@@ -3,7 +3,7 @@ import '../Style/ButtonDisplay.css';
 
 const Button = () => {
   return (
-    <div className="button-container">
+    <div className="button-container-display">
       <button className="custombt">More Games</button>
     </div>
   );

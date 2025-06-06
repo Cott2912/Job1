@@ -35,3 +35,17 @@
 .double-arrow-button:hover {
     background-color: #958e8e;
 }
+
+@media screen and (max-width: 430px) {
+    .pagination-container {
+        gap: 4px;
+
+    }
+
+    .page-button,
+    .arrow-button,
+    .double-arrow-button {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}

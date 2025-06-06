@@ -1,14 +1,13 @@
 .Add-container {
     position: absolute;
     top: 60px;
-    margin-left: 1250px;
+    right: 200px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, auto);
     gap: 10px;
     z-index: 1000;
     border-radius: 12px;
-    box-shadow: 0 2px 15px rgba(138, 131, 131, 0.5);
 
 }
 
@@ -41,4 +40,31 @@
     background-color: orangered;
     transform: scale(1.05);
     cursor: pointer;
+}
+
+@media screen and (max-width: 930px) {
+    .Add-container {
+        position: static;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .Add-child-container {
+        width: 160px;
+        height: 130px;
+        font-size: 11px;
+        padding: 10px;
+    }
+
+    .game-image-Add {
+        height: 100px;
+    }
+
+    .game-title-Add {
+        font-size: 14px;
+    }
 }

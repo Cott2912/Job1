@@ -70,3 +70,39 @@ button {
     white-space: nowrap;
     z-index: 1000;
 }
+
+@media screen and (max-width: 930px) {
+    .game-link-container {
+        width: 100%;
+        padding: 12px;
+        gap: 10px;
+        box-sizing: border-box;
+    }
+
+    .game-field {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input {
+        width: 100%;
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .tooltip {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}

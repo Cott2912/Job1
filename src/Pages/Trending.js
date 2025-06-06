@@ -5,7 +5,7 @@ import AddPage from "../Components/AddPage";
 import { GoDotFill } from "react-icons/go";
 const gameCategories = [
     { name: "Action Games", path: "/action-games" },
-    { name: "Adventure Games", path: "/adventure-games" },
+    { name: "Hot Hit Games", path: "/adventure-games" },
     { name: "Puzzle Games", path: "/puzzle-games" },
     { name: "Racing Games", path: "/racing-games" },
     { name: "Sport Game", path: "sport-games" }

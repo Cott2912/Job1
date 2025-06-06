@@ -41,3 +41,13 @@
         background-color: red;
         border-radius: 12%;
     }
+
+    @media (max-width: 930px) {
+        .footer-links a {
+            font-size: 13px;
+        }
+
+        .footer-link {
+            padding: 3px 6px;
+        }
+    }

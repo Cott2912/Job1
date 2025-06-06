@@ -1,3 +1,11 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
 .header {
     height: 20px;
     width: 100%;
@@ -115,4 +123,43 @@
 
 .mouse:hover {
     color: #ff4500;
+}
+
+@media (max-width: 930px) {
+    .nav-links {
+        display: none;
+    }
+
+    .search-bar {
+        flex: 1;
+        justify-content: flex-start;
+    }
+
+    .search-bar input {
+        display: none;
+    }
+
+    .search-bar svg {
+        font-size: 24px;
+        margin-left: 60px;
+    }
+
+    .icons {
+        margin-left: 20px;
+    }
+
+    .icons svg:first-child {
+        margin-left: 10px;
+    }
+
+
+    .logo {
+        font-size: 20px;
+        margin: 0 auto;
+        margin-left: 20px;
+    }
+
+    .header {
+        padding: 15px 10px;
+    }
 }

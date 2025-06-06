@@ -8,9 +8,11 @@ const aboutContent = [
 const AboutUs = () => {
     return (
         <AddHome title="About Us">
-            {aboutContent.map((text, index) => (
-                <p key={index} style={{ lineHeight: "1.6", marginBottom: "10px" }}>{text}</p>
-            ))}
+            <div style={{ marginBottom: "30px" }}>
+                {aboutContent.map((text, index) => (
+                    <p key={index} style={{ lineHeight: "1.6", marginBottom: "10px" }}>{text}</p>
+                ))}
+            </div>
         </AddHome>
     );
 };

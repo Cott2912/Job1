@@ -15,15 +15,16 @@
 
 .styles-recent-item {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 15px;
     max-width: 100%;
-    overflow-x: auto;
+    overflow-x: hidden;
     padding: 20px;
     border-radius: 10px;
 }
 
 .recent-item {
+
     padding: 12px;
     border-radius: 10px;
     text-align: center;
@@ -32,6 +33,7 @@
     width: 150px;
     border: 2px solid #c0b3af;
     transition: 0.3s ease-in-out;
+
 }
 
 .recent-item:hover {
@@ -42,13 +44,44 @@
 
 .recent-image {
     width: 100%;
-    height: 120px;
+    height: 60px;
     object-fit: cover;
     border-radius: 8px;
+
 }
 
 .recent-item p {
     font-size: 16px;
     font-weight: bold;
     margin-top: 10px;
+}
+
+@media (max-width: 930px) {
+    .styles-recent-item {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 12px;
+        padding: 10px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .recent-item {
+        flex: 0 0 auto;
+        width: 40%;
+        height: 120px;
+        scroll-snap-align: center;
+    }
+
+    .recent-image {
+        height: 80px;
+    }
+
+    .recent-item p {
+        font-size: 14px;
+    }
+
+    .style-recent-title {
+        font-size: 20px;
+        margin-right: 0;
+    }
 }

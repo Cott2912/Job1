@@ -56,3 +56,9 @@
         transform: translateY(3px);
     }
 }
+
+@media screen and (max-width: 930px) {
+    .plbutton-container {
+        margin-left: 190px;
+    }
+}
