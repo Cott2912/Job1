@@ -14,7 +14,6 @@
     position: relative;
     display: flex;
     gap: 30px;
-    /* left: 10px; */
     width: 100%;
 
 }
@@ -48,40 +47,37 @@
     border-radius: 10px;
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 400px) {
     .style-game-item {
         display: flex;
         flex-wrap: wrap;
-        gap: 16px;
-        top: -20px;
+        column-gap: 60px;
+        row-gap: 20px;
+        top: -35px;
         left: -5px;
-        /* justify-content: space-between; */
         padding: 0 10px;
-        /* ✅ tạo lề trong để cách đều 2 bên */
     }
 
     .game-item {
-        width: calc(50% - 8px);
-        /* ✅ 2 cột, trừ khoảng gap nhỏ */
-        height: 170px;
+        width: 140px;
+        height: 160px;
     }
 
     .game-image {
-        height: 120px;
+        height: 110px;
     }
 
     .style-title-oneline {
         font-size: 22px;
         right: 0;
-        /* hoặc bỏ đi nếu không cần lệch */
     }
+
 }
-@media screen and (min-width: 1920px) {
-   
+
+@media screen and (min-width: 1380px) and (max-width: 1930px) {
     .game-item {
         width: 175px;
         height: 180px;
-        
     }
 
     .game-image {
@@ -98,23 +94,24 @@
         margin-bottom: -110px;
     }
 }
-@media screen and (max-width: 1366px) and (max-height: 768px) {
+
+@media screen and (min-width: 410px)and (max-width: 1370px) {
     .style-game-item {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         gap: 16px;
-        padding: 0 20px;
+        padding: 0 10px;
         width: 100%;
     }
 
     .game-item {
-        width: 100%;
-        height: auto;
+        width: 210px;
+        height: 170px;
     }
 
     .game-image {
         width: 100%;
-        height: 170px;
+        height: 120px;
         aspect-ratio: 4/3;
         object-fit: cover;
     }

@@ -18,18 +18,10 @@
 .game-image-detail {
     width: 950px;
     height: 700px;
-    object-fit: cover;
     border-radius: 15px;
     border: 2px solid #ddd;
     transition: 0.3s ease-in-out;
     margin-right: 200px;
-}
-
-.game-title-detail {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-
 }
 
 .not-found-text {
@@ -38,7 +30,7 @@
     color: red;
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 400px) {
     .game-detail-page {
         padding: 20px 10px;
         margin-top: 0;
@@ -53,5 +45,42 @@
         max-width: 100%;
         height: auto;
         margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 1380px) and (max-width: 1930px) {
+    .game-detail-page {
+        padding: 20px 10px;
+        margin-top: 0;
+    }
+
+    .game-container {
+        justify-content: center;
+
+    }
+
+    .game-image-detail {
+        max-width: 80%;
+        height: auto;
+        margin-right: 350px;
+    }
+
+}
+
+@media screen and (min-width: 410px)and (max-width: 1370px) {
+    .game-detail-page {
+        padding: 20px 10px;
+        margin-top: 0;
+    }
+
+    .game-container {
+        justify-content: center;
+
+    }
+
+    .game-image-detail {
+        max-width: 65%;
+        height: auto;
+        margin-right: 300px;
     }
 }

@@ -1,6 +1,7 @@
 
 import News from "../Components/News";
 import '../Style/UpdatedGames.css';
+
 const UpdateGames = () => {
     return (
         <>

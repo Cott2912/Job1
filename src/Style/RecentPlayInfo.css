@@ -63,3 +63,5 @@
     margin-top: 30px;
     font-style: italic;
 }
+
+@media (max-width: 1400px) {}

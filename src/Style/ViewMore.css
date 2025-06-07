@@ -23,21 +23,17 @@
     transform: scale(1.005);
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 400px) {
     .style-ViewMore {
-        font-size: 12px;
-        padding: 8px 16px;
-        height: 40px;
-        width: 50px;
-        top: -820px;
-        right: -140px;
-        border-radius: 8px;
-        gap: 6px;
-
+        position: relative;
+        left: 0px;
+        top: -10px
     }
 
+
 }
-@media screen and (min-width: 1920px) {
+
+@media screen and (min-width: 1380px) and (max-width: 1930px) {
     .style-ViewMore {
         top: -50px;
         height: 90px;
@@ -45,10 +41,11 @@
         font-size: 20px;
     }
 }
-@media screen and (max-width: 1366px) and (max-height: 768px) {
+
+@media screen and (min-width: 410px)and (max-width: 1370px) {
     .style-ViewMore {
         position: relative;
-        top: -170px;
+        top: -145px;
         left: auto;
         right: auto;
         width: 150px;

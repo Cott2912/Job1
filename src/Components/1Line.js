@@ -1,7 +1,5 @@
 import '../Style/1Line.css';
 import { games } from "./News";
-import SixGames from "./6Games";
-import OneGame from './1Game';
 import ViewMore from './ViewMore';
 import { useNavigate } from "react-router-dom";
 export const getRandomGames = (gameList, count) => {

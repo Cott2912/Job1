@@ -23,7 +23,7 @@
     transform: scale(1.05);
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 400px) {
     .button-container {
         justify-content: center;
         margin: 20px auto 10px auto;
@@ -33,4 +33,34 @@
         padding: 8px 16px;
         font-size: 14px;
     }
+}
+
+@media screen and (min-width: 1380px) and (max-width: 1930px) {
+
+    .button-container-display {
+        display: flex;
+        position: relative;
+        right: 100px;
+
+    }
+
+    .custombt {
+        padding: 8px 16px;
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 410px)and (max-width: 1370px) {
+    .button-container-display {
+        display: flex;
+        position: relative;
+        right: 180px;
+
+    }
+
+    .custombt {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
 }

@@ -42,7 +42,7 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 400px) {
     .Add-container {
         position: static;
         margin: 20px auto;
@@ -58,6 +58,52 @@
         height: 130px;
         font-size: 11px;
         padding: 10px;
+    }
+
+    .game-image-Add {
+        height: 100px;
+    }
+
+    .game-title-Add {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1380px) and (max-width: 1930px) {
+    .Add-container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: start;
+        width: auto;
+        margin-right: 50px;
+        margin-top: 32px;
+    }
+
+    .Add-child-container {
+        width: 170px;
+        height: 130px;
+    }
+
+    .game-image-Add {
+        height: 100px;
+    }
+
+    .game-title-Add {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 410px)and (max-width: 1370px) {
+    .Add-container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: start;
+        width: auto;
+        margin-right: -80px;
+        margin-top: 30px;
+    }
+
+    .Add-child-container {
+        width: 130px;
+        height: 130px;
     }
 
     .game-image-Add {

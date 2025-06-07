@@ -6,9 +6,7 @@ const dmcaPoints = [
     "Identification of the copyrighted work that you claim has been infringed, or, if there are multiple copyrighted works at a single online site that are covered by a single notification, a representative list of such works at that site.",
     "Identification of the material that you claim is infringing or is the subject of infringing activity and that should be removed or disabled, as well as information reasonably sufficient to permit us to locate the material.",
     "Information reasonably sufficient to permit us to contact you, such as your address, telephone number, and email address if available.",
-    "A statement that you have a good faith belief that use of the material in the manner complained of is not authorized by the copyright owner, its agent, or the law.",
-    "A statement that the information in your notification is accurate and, under penalty of perjury, that you are the owner of an exclusive right that is allegedly infringed or are authorized to act on behalf of such owner.",
-    "Please note that submitting a false claim of copyright infringement is illegal and may result in legal consequences."
+    "A statement that you have a good faith belief that use of the material in the manner complained of is not authorized by the copyright owner, its agent, or the law."
 ];
 
 const DMCA = () => {
