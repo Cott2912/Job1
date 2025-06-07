@@ -57,7 +57,7 @@
     }
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 440px) {
     .plbutton-container {
         margin-left: 190px;
     }

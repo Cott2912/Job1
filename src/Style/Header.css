@@ -125,7 +125,7 @@ body {
     color: #ff4500;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 440px) {
     .nav-links {
         display: none;
     }

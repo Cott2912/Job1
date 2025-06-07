@@ -36,7 +36,7 @@
     background-color: #958e8e;
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 440px) {
     .pagination-container {
         gap: 4px;
 

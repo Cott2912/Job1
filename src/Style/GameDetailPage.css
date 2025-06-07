@@ -30,7 +30,7 @@
     color: red;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 440px) {
     .game-detail-page {
         padding: 20px 10px;
         margin-top: 0;
@@ -67,7 +67,7 @@
 
 }
 
-@media screen and (min-width: 410px)and (max-width: 1370px) {
+@media screen and (min-width: 450px)and (max-width: 1370px) {
     .game-detail-page {
         padding: 20px 10px;
         margin-top: 0;

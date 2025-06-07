@@ -23,7 +23,7 @@
     transform: scale(1.005);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 440px) {
     .style-ViewMore {
         position: relative;
         left: 0px;
@@ -42,7 +42,7 @@
     }
 }
 
-@media screen and (min-width: 410px)and (max-width: 1370px) {
+@media screen and (min-width: 450px)and (max-width: 1370px) {
     .style-ViewMore {
         position: relative;
         top: -145px;

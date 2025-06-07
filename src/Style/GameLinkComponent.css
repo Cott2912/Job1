@@ -71,7 +71,7 @@ button {
     z-index: 1000;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 440px) {
     .game-link-container {
         width: 100%;
         padding: 12px;
@@ -116,7 +116,7 @@ button {
     }
 }
 
-@media screen and (min-width: 410px)and (max-width: 1370px) {
+@media screen and (min-width: 450px)and (max-width: 1370px) {
 
     .game-link-container {
         width: 60%;

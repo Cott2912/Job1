@@ -98,7 +98,7 @@
     top: -30px
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 440px) {
     .game-container {
         position: relative;
         top: -40px;
@@ -177,7 +177,7 @@
     }
 }
 
-@media screen and (min-width: 410px)and (max-width: 1370px) {
+@media screen and (min-width: 450px)and (max-width: 1370px) {
     .game-list {
         grid-template-columns: repeat(6, 1fr);
         position: relative;

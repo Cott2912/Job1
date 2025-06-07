@@ -56,7 +56,7 @@
     margin-top: 10px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 440px) {
     .styles-recent-item {
         flex-wrap: nowrap;
         overflow-x: auto;
@@ -101,7 +101,7 @@
     }
 }
 
-@media screen and (min-width: 410px)and (max-width: 1370px) {
+@media screen and (min-width: 440px)and (max-width: 1370px) {
     .recent-game {
         margin-top: -70px;
         margin-bottom: 30px;
