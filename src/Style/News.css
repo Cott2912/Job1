@@ -98,11 +98,11 @@
     top: -30px
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 400px) {
     .game-container {
         position: relative;
         top: -40px;
-        padding: 0 8px;
+        padding: 0 15px;
     }
 
     .game-list {
@@ -146,6 +146,56 @@
         margin-bottom: 10px;
     }
 }
+
+@media screen and (min-width: 410px) and (max-width: 450px) {
+    .game-container {
+        position: relative;
+        top: -40px;
+        padding: 0 25px;
+    }
+
+    .game-list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        column-gap: 2px;
+        row-gap: 8px;
+        padding: 0 5px;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    .game-card {
+        width: 140px;
+        height: 160px;
+        margin-top: 0;
+    }
+
+    .game-card img {
+        height: 130px;
+    }
+
+    .game-info {
+        font-size: 14px;
+    }
+
+    .controls {
+        justify-content: center;
+    }
+
+    .prev-btn,
+    .next-btn {
+        top: -10px;
+        right: 20px;
+        font-size: 18px;
+        width: 40px;
+    }
+
+    .highlight {
+        font-size: 23px;
+        margin-bottom: 10px;
+    }
+}
+
 
 @media screen and (min-width: 1380px) and (max-width: 1930px) {
     .game-list {

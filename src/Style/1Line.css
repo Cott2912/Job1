@@ -55,7 +55,7 @@
         row-gap: 10px;
         top: -35px;
         left: -5px;
-        padding: 0 15px;
+        padding: 0 20px;
     }
 
     .game-item {
@@ -74,15 +74,16 @@
 
 }
 
-@media screen and (min-width: 410) and (max-width: 440px) {
+@media screen and (min-width: 410px) and (max-width: 450px) {
     .style-game-item {
+        position: relative;
         display: flex;
         flex-wrap: wrap;
-        column-gap: 73px;
+        column-gap: 75px;
         row-gap: 10px;
         top: -35px;
         left: -5px;
-        padding: 0 15px;
+        padding: 0 30px;
     }
 
     .game-item {
@@ -103,8 +104,10 @@
 
 @media screen and (min-width: 1380px) and (max-width: 1930px) {
     .game-item {
-        width: 175px;
+        position: relative;
+        width: 187px;
         height: 180px;
+        right: 20px;
     }
 
     .game-image {
@@ -116,7 +119,7 @@
     }
 
     .style-game-item {
-        gap: 40px;
+        gap: 33px;
         left: 35px;
         margin-bottom: -110px;
     }
@@ -132,8 +135,11 @@
     }
 
     .game-item {
+        position: relative;
         width: 210px;
         height: 170px;
+        right: 10px;
+
     }
 
     .game-image {
