@@ -47,15 +47,15 @@
     border-radius: 10px;
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 400px) {
     .style-game-item {
         display: flex;
         flex-wrap: wrap;
-        column-gap: 60px;
-        row-gap: 20px;
+        column-gap: 55px;
+        row-gap: 10px;
         top: -35px;
         left: -5px;
-        padding: 0 10px;
+        padding: 0 15px;
     }
 
     .game-item {
@@ -64,7 +64,34 @@
     }
 
     .game-image {
-        height: 110px;
+        height: 100px;
+    }
+
+    .style-title-oneline {
+        font-size: 22px;
+        right: 0;
+    }
+
+}
+
+@media screen and (min-width: 410) and (max-width: 440px) {
+    .style-game-item {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 73px;
+        row-gap: 10px;
+        top: -35px;
+        left: -5px;
+        padding: 0 15px;
+    }
+
+    .game-item {
+        width: 140px;
+        height: 160px;
+    }
+
+    .game-image {
+        height: 100px;
     }
 
     .style-title-oneline {
