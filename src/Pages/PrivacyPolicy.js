@@ -1,6 +1,5 @@
 import React from "react";
 import AddHome from "../Components/AddHome";
-import { GoDotFill } from "react-icons/go";
 
 const sections = [
     {
@@ -69,17 +68,18 @@ const PrivacyPolicy = () => {
                             <h2 style={{ color: "orange", fontSize: "16px", marginBottom: "8px" }}>{sub.subtitle}</h2>
                             {sub.content && sub.content.map((text, l) => <p key={l} style={{ marginBottom: "8px" }}>{text}</p>)}
                             {sub.items && sub.items.map((item, k) => (
-                                <p key={k} style={{ marginBottom: "8px" }}><GoDotFill style={{ marginLeft: "20px", fontSize: "10px" }} /> {item}</p>
+                                <p key={k} style={{ marginBottom: "8px" }}><li style={{ marginLeft: "10px" }}>{item}</li></p>
                             ))}
                         </React.Fragment>
                     ))}
                     {section.items && section.content && section.content.map((text, l) => <p key={l} style={{ marginBottom: "8px" }}>{text}</p>)}
                     {section.items && section.items.map((item, m) => (
-                        <p key={m} style={{ marginBottom: "8px" }}><GoDotFill style={{ marginLeft: "20px", fontSize: "10px" }} /> {item}</p>
+                        <p key={m} style={{ marginBottom: "8px" }}> <li style={{ marginLeft: "10px" }}>{item}</li></p>
                     ))}
                 </React.Fragment>
-            ))}
-        </AddHome>
+            ))
+            }
+        </AddHome >
     );
 };
 

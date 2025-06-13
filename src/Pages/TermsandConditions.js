@@ -1,6 +1,5 @@
 import React from "react";
 import AddHome from "../Components/AddHome";
-import { GoDotFill } from "react-icons/go";
 
 const sections = [
     {
@@ -87,7 +86,7 @@ const TermsandConditions = () => {
                     ))}
                     {section.items && section.items.map((item, m) => (
                         <p key={m} style={{ marginBottom: "8px" }}>
-                            <GoDotFill style={{ marginLeft: "20px", fontSize: "10px" }} /> {item}
+                            <li style={{ marginLeft: "10px" }}>{item} </li>
                         </p>
                     ))}
                 </React.Fragment>

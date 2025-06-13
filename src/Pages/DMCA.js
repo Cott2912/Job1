@@ -1,5 +1,4 @@
 import AddHome from "../Components/AddHome";
-import { GoDotFill } from "react-icons/go";
 
 const dmcaPoints = [
     "Your physical or electronic signature, as the owner of an exclusive right that is allegedly infringed, or as an authorized representative of such an owner.",
@@ -20,7 +19,7 @@ const DMCA = () => {
             </h2>
             {dmcaPoints.map((point, index) => (
                 <p key={index} style={{ fontSize: "16px", marginBottom: "8px" }}>
-                    <GoDotFill style={{ marginLeft: "20px", fontSize: "10px" }} /> {point}
+                    <li style={{ marginLeft: "10px" }}> {point} </li>
                 </p>
             ))}
         </AddHome>
