@@ -2,7 +2,6 @@ import React from "react";
 import News from "../Components/News";
 import PlusButton from "../Components/PlusButton";
 import AddPage from "../Components/AddPage";
-import { GoDotFill } from "react-icons/go";
 const gameCategories = [
     { name: "Action Games", path: "/action-games" },
     { name: "Hot Hit Games", path: "/adventure-games" },
@@ -46,7 +45,7 @@ const TrendingGames = () => {
                                 {section.text}
                                 {section.list && section.list.map((item, i) => (
                                     <React.Fragment key={i}>
-                                        <br /> <GoDotFill /> {item}
+                                        <br /> <li style={{ marginLeft: "10px" }}> {item}</li>
                                     </React.Fragment>
                                 ))}
                             </p>
