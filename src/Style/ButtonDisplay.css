@@ -2,7 +2,7 @@
     display: flex;
     justify-content: flex-end;
     margin-top: 30px;
-    margin-left: 700px;
+    margin-left: 400px;
     margin-bottom: 20px;
 }
 
@@ -24,6 +24,10 @@
 }
 
 @media screen and (max-width: 440px) {
+    .button-container-display {
+        margin-left: 15px;
+    }
+
     .button-container {
         justify-content: center;
         margin: 20px auto 10px auto;

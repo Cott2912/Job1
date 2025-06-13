@@ -33,13 +33,13 @@ function App() {
           <Sidebar isOpen={isSidebarOpen} closeSidebar={closeSidebar} />
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/game/:gameId" element={<GameDetailPage isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} closeSidebar={closeSidebar} />} />
+            <Route path="/game/:gameId" element={<GameDetailPage />} />
             <Route path="/contact-us" element={<ContactUs />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/DMCA" element={<DMCA />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsandConditions />} />
-            <Route path="/category/:category" element={<CategoryPage toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} />} />
+            <Route path="/category/:category" element={<CategoryPage />} />
             <Route path="/updated" element={<UpdateGames />} />
             <Route path="/trending" element={<TrendingGames />} />
             <Route path="/newgame" element={<NewGames />} />

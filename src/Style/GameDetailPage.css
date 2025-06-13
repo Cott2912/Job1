@@ -16,12 +16,12 @@
 }
 
 .game-image-detail {
-    width: 950px;
+    width: 970px;
     height: 700px;
     border-radius: 15px;
     border: 2px solid #ddd;
     transition: 0.3s ease-in-out;
-    margin-right: 200px;
+    margin-right: 350px;
 }
 
 .not-found-text {
@@ -62,7 +62,7 @@
     .game-image-detail {
         max-width: 80%;
         height: auto;
-        margin-right: 350px;
+        margin-right: 420px;
     }
 
 }
@@ -81,6 +81,6 @@
     .game-image-detail {
         max-width: 65%;
         height: auto;
-        margin-right: 300px;
+        margin-right: 330px;
     }
 }

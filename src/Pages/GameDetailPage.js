@@ -7,7 +7,7 @@ import GameLinkComponent from "../Components/GameLinkComponent";
 import Sidebar from "../Components/SideBar";
 import { games } from "../Components/News";
 
-const GameDetailPage = ({ isSidebarOpen, toggleSidebar, closeSidebar }) => {
+const GameDetailPage = ({ isSidebarOpen, closeSidebar }) => {
   const { gameId } = useParams();
   const [game, setGame] = useState(null);
 

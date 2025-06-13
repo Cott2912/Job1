@@ -1,7 +1,7 @@
 .Add-container {
     position: absolute;
     top: 60px;
-    right: 200px;
+    right: 340px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, auto);
@@ -74,7 +74,7 @@
         grid-template-columns: repeat(2, 1fr);
         justify-content: start;
         width: auto;
-        margin-right: 50px;
+        margin-right: -90px;
         margin-top: 32px;
     }
 
@@ -97,7 +97,7 @@
         grid-template-columns: repeat(2, 1fr);
         justify-content: start;
         width: auto;
-        margin-right: -80px;
+        margin-right: -220px;
         margin-top: 30px;
     }
 
