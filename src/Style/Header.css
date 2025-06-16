@@ -99,6 +99,7 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
+
 }
 
 .icons svg {
@@ -106,6 +107,7 @@ body {
     cursor: pointer;
     transition: 0.3s ease-in-out;
     margin-left: -100px;
+    z-index: 2000;
 }
 
 .icons svg:hover {
